@@ -4,6 +4,8 @@
 // found at https://github.com/DylanXie123/Num-Plus-Plus/blob/71a959ff6c43cc0515348f6eafbe6ea529888833/LICENSE
 // and by a BSD-style license that can be found in the LICENSE file.
 
+// ignore_for_file: deprecated_member_use
+
 import 'dart:math' as math;
 
 import 'package:math_expressions/math_expressions.dart';

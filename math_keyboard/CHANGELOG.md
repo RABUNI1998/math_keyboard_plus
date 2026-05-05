@@ -3,6 +3,8 @@
 * Fixed repository URL verification for Pub.dev.
 * Fixed dangling library documentation comment.
 * Updated dependencies: `math_expressions` to ^3.1.0, `petitparser` to ^7.0.2.
+* Fixed type compatibility issues with `math_expressions` v3.1.0 API changes.
+* Resolved `Stack` import ambiguity between Flutter and math_expressions.
 
 ## 0.4.0
 
