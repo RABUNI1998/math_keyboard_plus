@@ -3,8 +3,10 @@ description: >-2
   Math expression editing using an on-screen software keyboard or physical keyboard input in a
   typeset input field in Flutter.
 version: 0.4.0
-homepage: https://github.com/<your-github-username>/math_keyboard_plus
-repository: https://github.com/<your-github-username>/math_keyboard_plus
+homepage: https://github.com/RABUNI1998/math_keyboard_plus
+repository: https://github.com/RABUNI1998/math_keyboard_plus
+authors:
+  - Joseph Marfo <josephmarfo1998@gmail.com>
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
