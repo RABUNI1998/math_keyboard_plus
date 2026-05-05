@@ -1,0 +1,30 @@
+name: greetings
+permissions:
+  issues: write
+  pull-requests: write
+
+on:
+  - pull_request_target
+  - issues
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          Hi 👋🏽 Thank you for opening your first issue with simpleclub/math_keyboard ❤
+
+          You can expect triage from us soon 🙂
+          In the meantime, you can try to search for similar issues in our [issue database].
+
+          [issue database]: https://github.com/simpleclub/math_keyboard/issues
+        pr-message: |
+          Hi 👋🏽 Thank you for opening your first PR with simpleclub/math_keyboard ❤
+          
+          You can expect a review from us soon ☺️ 
+          In the meantime, please check our [contribution guidelines], the PR checklist, and the PR checks.
+          
+          [contribution guidelines]: https://github.com/simpleclub/math_keyboard/blob/main/CONTRIBUTING.md
