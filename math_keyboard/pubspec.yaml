@@ -2,7 +2,7 @@ name: math_keyboard_plus
 description: >-2
   Math expression editing using an on-screen software keyboard or physical keyboard input in a
   typeset input field in Flutter.
-version: 0.4.0
+version: 0.4.1
 homepage: https://github.com/RABUNI1998/math_keyboard_plus
 repository: https://github.com/RABUNI1998/math_keyboard_plus/tree/master/math_keyboard
 

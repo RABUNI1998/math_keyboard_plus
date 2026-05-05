@@ -1,3 +1,9 @@
+## 0.4.1
+
+* Fixed repository URL verification for Pub.dev.
+* Fixed dangling library documentation comment.
+* Updated dependencies: `math_expressions` to ^3.1.0, `petitparser` to ^7.0.2.
+
 ## 0.4.0
 
 * Renamed package to `math_keyboard_plus`.
