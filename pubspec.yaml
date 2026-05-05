@@ -1,0 +1,34 @@
+name: math_keyboard_plus
+description: >-2
+  Math expression editing using an on-screen software keyboard or physical keyboard input in a
+  typeset input field in Flutter.
+version: 0.4.0
+homepage: https://github.com/RABUNI1998/math_keyboard_plus
+repository: https://github.com/RABUNI1998/math_keyboard_plus
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_math_fork: ^0.7.4
+  holding_gesture: ^1.2.0
+  intl: ^0.20.2
+  math_expressions: ^3.1.0
+  petitparser: ^7.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  pedantic: ^1.11.0
+
+flutter:
+  fonts:
+  - family: CustomKeyIcons
+    fonts:
+    - asset: fonts/CustomKeyIcons.ttf
