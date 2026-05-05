@@ -205,9 +205,9 @@ final texString = texNode.buildTexString();
 ```
 
 [logo]: https://user-images.githubusercontent.com/19204050/120233149-ab27a980-c244-11eb-8a7e-0bc6cd3fd607.png
-[repo]: https://github.com/simpleclub/math_keyboard
-[repo shield]: https://img.shields.io/github/stars/simpleclub/math_keyboard?style=social
-[demo]: https://simpleclub.github.io/math_keyboard
+[repo]: https://github.com/RABUNI1998/math_keyboard_plus
+[repo shield]: https://img.shields.io/github/stars/RABUNI1998/math_keyboard_plus?style=social
+[demo]: https://rabuni1998.github.io/math_keyboard_plus
 [demo shield]: https://img.shields.io/badge/math_keyboard_plus-demo-FFC107
 [pub shield]: https://img.shields.io/pub/v/math_keyboard_plus.svg
 [pub]: https://pub.dev/packages/math_keyboard_plus

@@ -1,9 +1,9 @@
-# [![math_keyboard logo][logo]][demo]
+# [![math_keyboard_plus logo][logo]][demo]
 
-[![math_keyboard Flutter web demo][demo shield]][demo]
-[![math_keyboard on Pub][pub shield]][pub]
+[![math_keyboard_plus Flutter web demo][demo shield]][demo]
+[![math_keyboard_plus on Pub][pub shield]][pub]
 
-`math_keyboard` is a Flutter package that allows editing math expressions using a typeset input
+`math_keyboard_plus` is a Flutter package that allows editing math expressions using a typeset input
 field (so-called "math field") and a custom-made fully integrated math keyboard in _Flutter only_ -
 no plugins, no web views.
 
@@ -104,15 +104,15 @@ editing the expression while we built the input field and editing ourselves.
 
 [logo]: https://user-images.githubusercontent.com/19204050/120233118-9cd98d80-c244-11eb-8e7e-05ede431c60f.png
 [simpleclub]: https://github.com/simpleclub
-[demo]: https://simpleclub.github.io/math_keyboard
-[demo shield]: https://img.shields.io/badge/math_keyboard-demo-FFC107
-[pub shield]: https://img.shields.io/pub/v/math_keyboard.svg
-[pub]: https://pub.dev/packages/math_keyboard
-[example]: https://github.com/simpleclub/math_keyboard/tree/main/math_keyboard/example
-[contributing]: https://github.com/simpleclub/math_keyboard/blob/main/CONTRIBUTING.md
-[issues]: https://github.com/simpleclub/math_keyboard/issues
-[license]: https://github.com/simpleclub/math_keyboard/blob/main/LICENSE
-[package readme]: https://github.com/simpleclub/math_keyboard/tree/main/math_keyboard
+[demo]: https://rabuni1998.github.io/math_keyboard_plus
+[demo shield]: https://img.shields.io/badge/math_keyboard_plus-demo-FFC107
+[pub shield]: https://img.shields.io/pub/v/math_keyboard_plus.svg
+[pub]: https://pub.dev/packages/math_keyboard_plus
+[example]: https://github.com/RABUNI1998/math_keyboard_plus/tree/main/math_keyboard_demo
+[contributing]: https://github.com/RABUNI1998/math_keyboard_plus/blob/main/CONTRIBUTING.md
+[issues]: https://github.com/RABUNI1998/math_keyboard_plus/issues
+[license]: https://github.com/RABUNI1998/math_keyboard_plus/blob/main/LICENSE
+[package readme]: https://github.com/RABUNI1998/math_keyboard_plus/tree/main/math_keyboard/README.md
 [catex]: https://github.com/simpleclub/CaTeX
 [flutter_math]: https://github.com/znjameswu/flutter_math
 [flutter_math_fork]: https://github.com/simpleclub-extended/flutter_math_fork
