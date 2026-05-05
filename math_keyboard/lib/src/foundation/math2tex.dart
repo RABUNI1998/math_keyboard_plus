@@ -140,7 +140,10 @@ List<TeX> _convertToTeX(Expression mathExpression, TeXNode parent) {
       ];
     }
     if (mathExpression is Root) {
-      if (mathExpression.n == 2) {
+      // Check if n is a Number with value 2
+      final isSquareRoot = mathExpression.n is Number &&
+          (mathExpression.n as Number).value == 2;
+      if (isSquareRoot) {
         return [
           TeXFunction(
             r'\sqrt',
@@ -156,7 +159,7 @@ List<TeX> _convertToTeX(Expression mathExpression, TeXNode parent) {
           parent,
           const [TeXArg.brackets, TeXArg.braces],
           [
-            convertMathExpressionToTeXNode(Number(mathExpression.n)),
+            convertMathExpressionToTeXNode(mathExpression.n),
             convertMathExpressionToTeXNode(mathExpression.arg),
           ],
         ),
