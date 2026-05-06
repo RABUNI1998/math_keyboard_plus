@@ -628,8 +628,9 @@ class _FieldPreview extends StatelessWidget {
       ),
       child: InputDecorator(
         textAlignVertical: TextAlignVertical.center,
-        // TODO: replace once the decorator handles the hint.
-        // isEmpty: controller.isEmpty,
+        // Note: Always set to false because InputDecorator's hint handling
+        // doesn't work well with the custom TeX rendering. Hint is displayed
+        // manually in the Stack below when controller.isEmpty is true.
         isEmpty: false,
         isFocused: hasFocus,
         decoration: decoration,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:math_expressions/math_expressions.dart';
+import 'package:math_expressions/math_expressions.dart' hide Stack;
 import 'package:math_keyboard_plus/math_keyboard_plus.dart';
 
 /// Page view for presenting the features that math_keyboard_plus has to offer.
@@ -861,7 +861,7 @@ class _MathExpressionsPageState extends State<_MathExpressionsPage> {
   String? _tex;
   late Expression _expression = ShuntingYardParser().parse('(x^2)/2 + 1');
   double _value = 4;
-  double? _result;
+  num? _result;
 
   late final _expressionController = MathFieldEditingController()
     ..updateValue(_expression);
@@ -883,9 +883,10 @@ class _MathExpressionsPageState extends State<_MathExpressionsPage> {
 
   void _calculateResult() {
     try {
+      var context = ContextModel()..bindVariableName('x', Number(_value));
+      var evaluator = RealEvaluator(context);
       setState(() {
-        _result = _expression.evaluate(EvaluationType.REAL,
-            ContextModel()..bindVariableName('x', Number(_value)));
+        _result = evaluator.evaluate(_expression);
       });
     } catch (_) {}
   }
@@ -981,9 +982,8 @@ class _MathExpressionsPageState extends State<_MathExpressionsPage> {
                   keyboardType: MathKeyboardType.numberOnly,
                   onChanged: (value) {
                     try {
-                      _value = TeXParser(value)
-                          .parse()
-                          .evaluate(EvaluationType.REAL, ContextModel());
+                      var evaluator = RealEvaluator();
+                      _value = evaluator.evaluate(TeXParser(value).parse()) as double;
                       _calculateResult();
                     } catch (_) {}
                   },
@@ -1050,9 +1050,8 @@ class _FormFieldPage extends StatelessWidget {
                     }
 
                     try {
-                      TeXParser(value)
-                          .parse()
-                          .evaluate(EvaluationType.REAL, ContextModel());
+                      var evaluator = RealEvaluator();
+                      evaluator.evaluate(TeXParser(value).parse());
                       return null;
                     } catch (_) {
                       return 'Invalid expression (:';

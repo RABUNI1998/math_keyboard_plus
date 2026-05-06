@@ -6,7 +6,9 @@
 
 import 'package:flutter/widgets.dart';
 
+/// Provides custom key icon data for the math keyboard.
 class CustomKeyIcons {
+  /// This class is not meant to be instantiated.
   CustomKeyIcons._();
 
   static const _kFontFam = 'CustomKeyIcons';
