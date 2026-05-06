@@ -1,5 +1,6 @@
 name: math_keyboard_demo
 description: Demo app for the math_keyboard_plus package.
+# Trigger deployment
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
